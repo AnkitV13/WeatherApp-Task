@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* background-image:url("/weatherapp/src/images/sunset-690742_1920.jpg"); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    color:white;
+    margin-bottom: 2em;
+}
+
+p{
+    color:white;
+    font-size:1em;
+}
+
+.container{
+    border-radius: 20px;
+    height:500px;
+    width:350px;
+    background-color:rgba(255,255,255,0.1);
+}
+
+.input-cont{
+   margin-left:65px;
+}
+
+.input-cont .cont{
+    outline:none;
+    border:none;
+    width:100%;
+    max-width:210px;
+    padding:10px 15px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius:10px;
+    color:#000000;
+    font-size:15px;
+    font-weight: 400;
+    transition: 0.2s ease-out;
+}
+
+.input-cont .cont:focus{
+    background-color: rgba(255,255,255,0.9);
+}
+
+.place{
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.place .city{
+    font-size:60px;
+    font-weight: 700;
+    color:#ffffff;
+    text-shadow: 0px 2px #000000;
+}
+
+.current{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+
+.current .temp{
+    font-size:40px;
+    font-weight: 700;
+    color:#ffffff;
+    text-shadow: 0px 2px #000000;
+}
+
+.current .min-max{
+    font-size:25px;
+    font-weight: 600;
+    color:#ffffff;
+    text-shadow: 0px 2px #000000;
+    margin-top:20px;
+}
+
+.noData{
+    color:#ffffff;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top:5em;
+    margin-left:4.8em;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+      width:300px;
+      margin-left:1.5em;
+    }
+
+    .input-cont{
+        margin-left:40px;
+     }
+     .noData{
+        color:#ffffff;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-left:4em;
+    }
+  }
